@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -13,6 +13,62 @@ li{
   list-style: none;
 }
 body{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+}
+nav{
+  background: #08956b;
+  height: 75px;
+}
+.title{
+  cursor: pointer;
+  line-height: 65px;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  font-size: 64px;
+  font-weight: 300;
+  color: white;
+}
+.header-ul{
+  float: right;
+}
+.header-li{
+  cursor: pointer;
+  display: inline;
+  font-size: 24px;
+  padding: 20px 20px;
+  line-height: 75px;
+  letter-spacing: -1px;
+  color: white;
+  transition: .25s all;
+}
+.header-li:hover{
+  border-bottom: 4px solid white;
+  background: #209f79;
+}
+.current{
+  border-bottom: 4px solid white;
+}
+
+
+.main-title{
+  font-size: 100px;
+  color: black;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+
+footer{
+  background: #209f79;
+  height: 75px;
+}
+footer ul li{
+  display: inline;
+  margin-top: 20px; 
+  padding: 20px;
+}
+
+.sml{
+  font-size: 64px;
+  color: white;
 }
