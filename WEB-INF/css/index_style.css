@@ -49,7 +49,14 @@ nav{
 .current{
   border-bottom: 4px solid white;
 }
+.current:hover{
+  background: #08956b;
+  cursor: default;
+}
 
+main{
+  height: calc(100vh - 150px);
+}
 
 .main-title{
   font-size: 100px;
@@ -62,13 +69,18 @@ footer{
   background: #209f79;
   height: 75px;
 }
+footer ul{
+  text-align: center;
+}
 footer ul li{
   display: inline;
-  margin-top: 20px; 
-  padding: 20px;
+  padding-top: 5px;
+  line-height: 75px;
 }
 
 .sml{
+  padding-top: 10px;
+  margin: 0 15px;
   font-size: 64px;
   color: white;
 }
