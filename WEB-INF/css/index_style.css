@@ -31,8 +31,12 @@ nav{
 }
 .header-ul{
   float: right;
+  position: absolute;
+  right:0;
+  top: 0;
 }
 .header-li{
+  background: #08956b;
   cursor: pointer;
   display: inline;
   font-size: 24px;
@@ -46,13 +50,34 @@ nav{
   border-bottom: 4px solid white;
   background: #209f79;
 }
+.header-maximize{
+  font-size: 32px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+.header-minimize{
+  font-size: 32px;
+  color: white;
+  display: none;
+  cursor: pointer;
+  background: #08956b;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 20px 20px;
+  line-height: 8px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: white;
+  transition: .25s all;
+}
+.header-minimize:hover{
+  background: #209f79;
+}
 .current{
   border-bottom: 4px solid white;
 }
-.current:hover{
-  background: #08956b;
-  cursor: default;
-}
+
 
 main{
   height: calc(100vh - 150px);
@@ -83,4 +108,37 @@ footer ul li{
   margin: 0 15px;
   font-size: 64px;
   color: white;
+}
+
+@media screen and (max-width:1000px) {
+  .header-li{
+    display: none;
+  }
+  .header-maximize{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px
+  }
+  .header-minimize{
+    font-size: 32px;
+    color: white;
+    display: none;
+    cursor: pointer;
+  }
+  .active{
+    display: block;
+  }
+  .maximized{
+    display: none;
+  }
+  .maximized-li{
+    display: block;
+    height: 20px;
+    border-bottom: none;
+    line-height: 8px;
+  }
+  .maximized-li:hover{
+    border-bottom: none;
+  }
 }
